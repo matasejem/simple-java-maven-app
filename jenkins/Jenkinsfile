@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Completed') {
             steps {
-                echo 'GitPipeline Completed'
+                echo 'GitPipeline Completed2'
             }
         }
     }
