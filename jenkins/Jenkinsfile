@@ -13,7 +13,7 @@ pipeline {
         }
         stage('InProgress') {
             steps {
-                sh 'GitPipeline InProgress'
+                echo 'GitPipeline InProgress'
             }
         }
         stage('Completed') {
