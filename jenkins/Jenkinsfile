@@ -11,9 +11,14 @@ pipeline {
                 sh 'mvn test -Denforcer.skip=true'
             }
         }
+        stage('InProgress') {
+            steps {
+                sh 'GitPipeline InProgress'
+            }
+        }
         stage('Completed') {
             steps {
-                echo 'GitPipeline Completed3'
+                echo 'GitPipeline Completed'
             }
         }
     }
